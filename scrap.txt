@@ -1,0 +1,16 @@
+attacker team won predicted by victim_role
+generalized across all first bloods
+
+if we want per-team:
+attacker team = team1
+attacker team by victim_role
+
+filter df by attacker team = team1 THEN model after
+TEAM FIGHT FIRST BLOOD CLOSEOUTS?????
+
+percentage of team fights won | team got first pick
+
+2-way table
+            team 1 first    team 2 first
+team 1 won
+team 2 won
