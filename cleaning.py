@@ -3,6 +3,9 @@ import hero_mappings as hm
 
 def cleanMap(df):
     staggers = findStaggers(df)
+    # Remove stagger fights
+    staggers = staggers[staggers['fight_id'] != -1]
+
     firstKills = findFirstKills(staggers)
 
     # Add hero-role mappings
