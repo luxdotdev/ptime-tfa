@@ -1,13 +1,13 @@
-# Overwatch Match Data Cleaner
+# Overwatch Team Fight Analysis (TFA)  
 
 ## Overview
 This repository contains a set of Python scripts designed for cleaning and analyzing Overwatch match data. The project structures the match data to identify key gameplay events such as staggers and first kills within each fight, enriches the data with hero role information, and provides tools for connecting to and querying a database. The analysis part of the project helps in understanding team performance by fights won.
 
 ## Repository Structure
 
-- `cleaning.py`: Contains functions for cleaning and structuring Overwatch match data, including identifying stagger events and first kills in fights, and merging hero roles.
+- `cleaning.py`: Contains helper functions for cleaning and structuring Overwatch match data, including identifying "stagger" kills and first kills in fights, and mapping heroes to roles.
 - `collect_data.py`: A script for connecting to a database to retrieve match data, clean it using functions from `cleaning.py`, and prepare it for analysis.
-- `db_connect.py`: Includes functions for parsing database connection URLs and establishing connections to a PostgreSQL database.
+- `db_connect.py`: Includes functions for establishing connections to a PostgreSQL database, and fetching data via PostgreSQL queries.
 - `hero_mappings.py`: Defines mappings between Overwatch heroes and their respective roles (Damage, Tank, Support), used for enriching the match data.
 - `two_way_table.py`: A simple analysis script that groups cleaned data by attacker team and whether they won the fight, summarizing team performance.
 
