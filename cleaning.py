@@ -33,7 +33,7 @@ def findStaggers(df):
 
 def findFirstKills(df):
     first_deaths = df.groupby('fight_id').first()
-    first_deaths = first_deaths[['attacker_team', 'attacker_hero','victim_team', 'victim_hero']]
+    first_deaths = first_deaths[['attacker_team', 'attacker_hero','attacker_name','victim_team', 'victim_hero','victim_name']]
 
     # Count kills by each team in each fight
     kills_by_team = df.groupby(['fight_id', 'attacker_team']).size().unstack(fill_value=0)

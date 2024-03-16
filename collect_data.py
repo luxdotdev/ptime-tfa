@@ -32,8 +32,10 @@ for id in range(len(maps)):
     SELECT "match_time",
         "attacker_team",
         "attacker_hero",
+        "attacker_name",
         "victim_team",
-        "victim_hero"
+        "victim_hero",
+        "victim_name"
     FROM "Kill"
     WHERE "MapDataId" = {currId}
     """
@@ -44,3 +46,4 @@ for id in range(len(maps)):
         new = cleanMap(db.sqlSearch(conn,query))
         df = pd.concat([df, new])
 
+print(df)
