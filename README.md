@@ -1,5 +1,10 @@
 # Overwatch Team Fight Analysis (TFA)  
 
+This project is still under development. I hope to invest more time into this project as school workload permits in the coming weeks. Some future plans/visions include:
+
+   - Continue exploratory data analysis (`eda.ipynb`) to identify potential features for predictive modeling
+   - Revisit the scrimmage database to engineer new features
+
 ## Overview
 This repository contains a set of Python scripts designed for cleaning and analyzing Overwatch match data. The project structures the match data to identify key gameplay events such as staggers and first kills within each fight, enriches the data with hero role information, and provides tools for connecting to and querying a database. The analysis part of the project helps in understanding team performance by fights won.
 
@@ -41,6 +46,7 @@ This repository contains a set of Python scripts designed for cleaning and analy
 
 2. **Data Analysis**:
    - After cleaning, you can use `two_way_table.py` to analyze team performance based on the cleaned data. This script provides a simple analysis, grouping data by attacker team and whether they won the fight.
+   - I've provided a simple logistic regression model under `simple_logit.ipynb` as a sample of potential work that can be done with the current data. The model is far from robust, but does confirm preexisting beliefs about the game.
 
 ## Contributing
 
